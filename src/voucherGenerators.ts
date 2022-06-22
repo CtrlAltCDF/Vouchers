@@ -26,13 +26,3 @@ export const generateVoucher = (): string => {
 
   return voucherData.join('');
 };
-
-export const generateMultipleVouchers = (count: number): Array<string> => {
-  const vouchers = Array<string>();
-
-  for (let itter = 0; itter < count; itter++) {
-    vouchers.push(generateVoucher());
-  }
-
-  return vouchers;
-};
